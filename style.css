@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 14, 2016, 8:49:37 PM
+    Author     : Wee Ai Sin
+*/
+
+body{
+    background-image: url("Background.jpg");
+    background-attachment: fixed;
+}
+.panel-body {
+    background-image: url("Form Background.jpg");
+}
+.button {
+    display: inline-block;
+    border-radius: 12px;
+    background-color: darkcyan;
+    color: lightyellow;
+    font-size: 18px;
+    padding: 16px;
+    height: 60px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button span:after {
+    content: '»»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.button:hover span {
+    padding-right: 20px;
+}
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+textarea {
+    width: 35%;
+    height: 160px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+}
